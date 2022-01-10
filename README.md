@@ -1,4 +1,4 @@
-# Laravel Starter Kit (Inertia - React - Windmill)
+# [WIP]Laravel Starter Kit (Inertia - React - Windmill)
 
 starter kit to develop with laravel 8 setup breeze, inertiajs with react and Windmill
 
