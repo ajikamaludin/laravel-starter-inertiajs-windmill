@@ -43,3 +43,7 @@ $ npm run watch
 email : admin@admin.com
 password : password
 ```
+
+## Screenshot
+
+![](screenshot.png?raw=true)
