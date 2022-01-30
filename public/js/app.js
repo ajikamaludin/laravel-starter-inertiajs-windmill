@@ -3777,9 +3777,9 @@ function Dashboard(props) {
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: "max-w-7xl mx-auto sm:px-6 lg:px-8",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        className: "bg-white overflow-hidden shadow-sm sm:rounded-lg",
+        className: "bg-white overflow-hidden shadow-sm sm:rounded-lg dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-          className: "p-6 bg-white border-b border-gray-200",
+          className: "p-6 border-b",
           children: "You're logged in!"
         })
       })
