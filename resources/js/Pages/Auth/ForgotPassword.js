@@ -1,31 +1,31 @@
-import React from 'react';
+import React from 'react'
 import { Head, useForm } from '@inertiajs/inertia-react'
 
-import Guest from '@/Layouts/Guest';
+import Guest from '@/Layouts/Guest'
 
-import ValidationErrors from '@/Components/ValidationErrors';
+import ValidationErrors from '@/Components/ValidationErrors'
 import ImageLight from '@/Assets/img/forgot-password-office.jpeg'
 import ImageDark from '@/Assets/img/forgot-password-office-dark.jpeg'
 
-
-export default function ForgotPassword() {
+export default function ForgotPassword(props) {
+    const { status } = props
     const { data, setData, post, processing, errors } = useForm({
         email: '',
-    });
+    })
 
     const onHandleChange = (event) => {
-        setData(event.target.name, event.target.value);
-    };
+        setData(event.target.name, event.target.value)
+    }
 
     const submit = (e) => {
-        e.preventDefault();
+        e.preventDefault()
 
-        post(route('password.email'));
-    };
+        post(route('password.email'))
+    }
 
     return (
         <Guest>
-            <Head title="Forgot Password"/>
+            <Head title="Forgot Password" />
             <div className="flex items-center min-h-screen p-6 bg-gray-50 dark:bg-gray-900">
                 <div className="flex-1 h-full max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-xl dark:bg-gray-800">
                     <div className="flex flex-col overflow-y-auto md:flex-row">
@@ -50,6 +50,7 @@ export default function ForgotPassword() {
                                 <h1 className="mb-4 text-xl font-semibold text-gray-700 dark:text-gray-200">
                                     Forgot password
                                 </h1>
+                                <p>{status}</p>
                                 <label className="block text-sm">
                                     <span className="text-gray-700 dark:text-gray-400">
                                         Email
